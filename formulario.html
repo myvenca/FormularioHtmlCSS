@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="">
+
+    <!-- Titulo na Aba do navegador -->
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <!-- Dentro do body iremos criar um div para colocar as informações -->
+<div>
+    <h1 id="titulo">Cadastro de DEVs</h1>  <!--Dentro do H1 és o TItulo do formulário!!-->
+    <p id="subtitulo">Complete suas informações</p> <!--Dentro do P completar suas informações-->
+    <br>
+</div>
+
+<!-- Quando for criar um formulário podemos criar tudo dentro da tag FORM -->
+<form>
+    <fieldset class="grupo">
+    <!-- Dentro do DIV iremos criar o NOME-->
+        <div class="campo"> 
+            <label for="nome"><strong>Nome</strong></label>
+            <input type="text" name="nome" id="nome" required>
+        </div>
+
+
+    <!-- Dentro de outra DIV iremos criar o SOBRENOME-->
+        <div class="campo"> 
+            <label for="sobrenome"><strong>Sobrenome</strong></label>
+            <input type="text" name="sobrenome" id="sobrenome" required>
+        </div>
+    </fieldset>
+
+    <!-- Iremos criar uma DIV para o campo email -->
+    <div class="campo">
+        <label class="email"><strong>Email</strong></label>
+        <input type="email" name="email" id="email" required>
+    </div>
+
+    <!-- Iremos criar uma radio bottom onde iremos selecionar as opções que vamos criar abaixo! -->
+    <div class="campo">
+        <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
+        <label>
+            <input type="radio" name="devweb" value="frontend" checked>Front-end
+        </label>
+        <label>
+            <input type="radio" name="devweb" value="backend">Back-end
+        </label>
+        <label>
+            <input type="radio" name="devweb" value="fullstack">Fullstack
+        </label>
+    </div>
+
+    <!-- Vamos criar uma outro div para selecionar os cargos de experiencia -->
+    <div class="campo">
+        <label for=senioridade"><strong>Senioridade</strong></label>
+        <select id="senioridade">
+            <option selected disabled value="">Selecione</option>
+            <option>Estudante</option>
+            <option>Estágio</option>
+            <option>Junior</option>
+            <option>Pleno</option>
+            <option>Senior</option>
+        </select>
+    </div>
+
+    <!-- Iremos criar uma fieldset para selecionar suas tecnologias que utiliza -->
+    <fieldset class="grupo">
+        <div id="check"
+            <label><strong>Selecione as tecnologias que você utiliza:</strong></label><br><br>
+            <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+            <label for="tecnologia1">HTML</label>
+            <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+            <label for="tecnologia2">CSS</label>
+            <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascript">
+            <label for="tecnologia3">Javascript</label>
+            <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+            <label for="tecnologia4">PHP</label>
+            <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+            <label for="tecnologia5">C#</label>
+            <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+            <label for="tecnologia6">Python</label>
+            <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
+            <label for="tecnologia7">Java</label>
+
+        </div>
+    </fieldset>
+
+    <!-- Iremos criar uma caixinha para escrever um texto -->
+    <div class="campo">
+        <br>
+        <label><strong>Conte um pouco da sua experiencia:</strong></label>
+        <textarea rows="5" style="width: 26em" id="experiencia" name="experiencia" ></textarea>
+    </div>
+
+    <!-- Agora o botão de enviar "Concluido"  -->
+    <button class="botao" type="submit">Concluído</button>
+
+</form>
+
+
+
+    
+</body>
+</html>
